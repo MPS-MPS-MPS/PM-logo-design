@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Paper Details - PaperMate</title>
+    <link rel="stylesheet" href="../css/main.css">
+    <link rel="stylesheet" href="../css/paper-page.css">
+    <link rel="stylesheet" href="../css/paper-detail.css">
+</head>
+<body>
+    <!-- Header -->
+    <div class="header">
+        <div class="logo-title">
+            <img src="../assets/paper mate logo.png" alt="PaperMate Logo" class="logo"/>
+            <h1>PaperMate</h1>
+        </div>
+        
+        <div class="search-section">
+            <input type="text" placeholder="Search. . ." class="search-bar" id="search-bar">
+            <div class="results-container"></div>
+        </div>
+        
+        <nav class="navbar">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="paper-page.html">Browse</a></li>
+                <li><a href="about.html">Connect</a></li>
+                <li><a href="contact.html">Libraries</a></li>
+            </ul>
+        </nav>
+        <div class="profile-div">
+            <div class="auth-buttons" id="auth-buttons">
+                <button class="login-btn">Login</button>
+                <button class="register-btn">Register</button>
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="left"></div>
+        <div class="middle">
+            <main class="main">
+                <div class="paper-container">
+                    <div class="paper-header">
+                        <!-- Left side - Cover image and quick stats -->
+                        <div class="paper-cover-section">
+                            <img src="../assets/journ-physics.jpeg" alt="Journal Cover" class="paper-cover">
+                            <div class="quick-actions">
+                                <a href="#" class="primary-btn">Full Text →</a>
+                                <div class="quick-stats">
+                                    <div class="stat-item">
+                                        <span class="stat-value">201</span>
+                                        <span class="stat-label">Readers</span>
+                                    </div>
+                                    <div class="stat-item">
+                                        <span class="stat-value">607</span>
+                                        <span class="stat-label">Libraries</span>
+                                    </div>
+                                    <div class="stat-item">
+                                        <span class="stat-value">26</span>
+                                        <span class="stat-label">Citations</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Right side - Paper details -->
+                        <div class="paper-details">
+                            <!-- Paper content will be dynamically inserted here -->
+                        </div>
+                    </div>
+                </div>
+            </main>
+        </div>
+        <div class="right"></div>
+    </div>
+
+    <div class="footer">
+        <h2>PaperMate</h2>
+        <h3>Products</h3>
+        <h3>Support</h3>
+        <h3>Follow Us</h3>
+    </div>
+
+    <script type="module" src="../js/pages/paper-detail.js"></script>
+    <script type="module" src="../js/paper-search.js"></script>
+</body>
+</html> 

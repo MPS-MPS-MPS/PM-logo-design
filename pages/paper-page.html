@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>PaperMate Homepage</title>
+  <link rel="stylesheet" href="../css/main.css">
+  
+  <link rel="stylesheet" href="../css/paper-page.css">
+  <link rel="stylesheet" href="../css/paper-detail.css">
+</head>
+<body>
+
+  <!-- Header -->
+  <div class="header">
+    <div class="logo-title">
+        <img src="/assets/paper mate logo.png" alt="PaperMate Logo" class="logo"/>
+        <h1>PaperMate</h1>
+    </div>
+    
+    <!-- Make sure this search section exists exactly as shown -->
+    <div class="search-section">
+        <input type="text" placeholder="Search. . ." class="search-bar" id="search-bar">
+        <div class="results-container"></div>
+    </div>
+    
+    <nav class="navbar">
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="paper-page.html">Browse</a></li>
+            <li><a href="about.html">Connect</a></li>
+            <li><a href="contact.html">Libraries</a></li>
+        </ul>
+    </nav>
+    <div class="profile-div">
+      <div class="auth-buttons" id="auth-buttons">
+        <button class="login-btn">Login</button>
+        <button class="register-btn">Register</button>
+      </div>
+      <a href="profile.html" class="profile-link" style="display: none;">    
+        <p></p>
+      </a>
+      <img src="../assets/image-circle-fill.png" alt="profile-pic" class="profile-pic-header" style="display: none;">
+      <button class="logout-btn" style="display: none;">Logout</button>
+    </div>
+  </div>
+  <!-- Header -->
+
+  <!-- Main -->
+  <div class="container">
+    <div class="left"></div>
+    <div class="middle"> 
+        <main class="main">
+            <div class="paper-container">
+                <div class="paper-header">
+                    <!-- Left side - Cover image and quick stats -->
+                    <div class="paper-cover-section">
+                        <img src="../assets/journ-physics.jpeg" alt="Journal Cover" class="paper-cover">
+                        <div class="quick-actions">
+                            <a href="#" class="primary-btn">Full Text →</a>
+                            <div class="quick-stats">
+                                <div class="stat-item">
+                                    <span class="stat-value">201</span>
+                                    <span class="stat-label">Readers</span>
+                                </div>
+                                <div class="stat-item">
+                                    <span class="stat-value">607</span>
+                                    <span class="stat-label">Libraries</span>
+                                </div>
+                                <div class="stat-item">
+                                    <span class="stat-value">26</span>
+                                    <span class="stat-label">Citations</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Right side - Paper details -->
+                    <div class="paper-details">
+                        <h1 class="paper-title">Quantum Entanglement in Neural Network States</h1>
+                        <div class="paper-authors">
+                            by <a href="#">Sarah J. Thompson</a>, 
+                            <a href="#">Michael R. Chen</a>, 
+                            <a href="#">David A. Miller</a>
+                        </div>
+                        <div class="paper-meta">
+                            <div class="rating-section">
+                                <div class="stars">
+                                    <span class="star filled">★</span>
+                                    <span class="star filled">★</span>
+                                    <span class="star filled">★</span>
+                                    <span class="star filled">★</span>
+                                    <span class="star">★</span>
+                                </div>
+                                <span class="rating-label">PM Rating</span>
+                            </div>
+                            <div class="meta-info">
+                                <span>Published 2023</span>
+                                <span>•</span>
+                                <span>26 Citations</span>
+                            </div>
+                        </div>
+
+                        <div class="abstract-section">
+                            <h2>Abstract</h2>
+                            <p>This paper explores the intersection of quantum mechanics and artificial neural networks, 
+                            specifically investigating how quantum entanglement manifests in neural network states. 
+                            We present a novel framework for understanding the relationship between quantum information 
+                            and deep learning architectures, demonstrating that certain neural network configurations 
+                            naturally encode quantum-like correlations. Our findings suggest new approaches for 
+                            quantum-inspired machine learning algorithms and potential applications in quantum computing.</p>
+                        </div>
+                        <div class="reviews-section">
+                            <h2>Recent Reviews</h2>
+                            <div class="review-block">
+                                <div class="review-header">
+                                    <img src="../assets/image-circle-fill.png" alt="Reviewer" class="reviewer-pic">
+                                    <div class="reviewer-info">
+                                        <a href="#" class="reviewer-name">John Smith</a>
+                                        <span class="review-date">March 15, 2024</span>
+                                    </div>
+                                </div>
+                                <p class="review-content">
+                                    A groundbreaking paper that bridges the gap between quantum mechanics and neural networks. 
+                                    The mathematical framework presented is both elegant and practical. Particularly impressed 
+                                    by the experimental validation of the theoretical predictions.
+                                </p>
+                            </div>
+                            <div class="review-block">
+                                <div class="review-header">
+                                    <img src="../assets/image-circle-fill.png" alt="Reviewer" class="reviewer-pic">
+                                    <div class="reviewer-info">
+                                        <a href="#" class="reviewer-name">Elena Rodriguez</a>
+                                        <span class="review-date">March 10, 2024</span>
+                                    </div>
+                                </div>
+                                <p class="review-content">
+                                    The authors have done an excellent job explaining complex concepts in an accessible manner. 
+                                    The implications for quantum computing are particularly exciting. Would love to see future 
+                                    work on practical implementations of these ideas.
+                                </p>
+                            </div>  
+                        </div>  
+                    </div>
+                    
+                </div>
+            </div>
+        </main>
+    </div>
+    <div class="right"></div>
+  </div> 
+
+  <div class="footer">
+    
+      <h2>PaperMate</h2> 
+      <h3>Products</h3>  
+      <h3>Support</h3>
+      <h3>Follow Us</h3>
+    
+
+  </div>
+
+  <!-- Remove or comment out old script tags -->
+  <!-- <script src="../data/sample-papers.js"></script> -->
+  <!-- <script src="../js/utils/debounce.js"></script> -->
+
+  <!-- Add all scripts as modules -->
+  <script type="module" src="../js/api/crossref-client.js"></script>
+  <script type="module" src="../js/paper-search.js"></script>
+  <script type="module" src="../js/pages/paper-page-init.js"></script>
+  <script type="module" src="../js/pages/paper-detail.js"></script>
+</body>
+</html>

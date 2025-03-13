@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>PaperMate Homepage</title>
+  <link rel="stylesheet" href="../css/main.css">
+</head>
+<body>
+
+  <!-- Header -->
+  <div class="header">
+    <span class="logo-title">
+      <img src="../assets/paper mate logo.png" alt="PaperMate Logo" class="logo"/>
+      <h1>PaperMate</h1>
+    </span>
+    <input type="text" placeholder="Search. . ." class="search-bar">
+    <nav class="navbar">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="paper-page.html">Browse</a></li>
+        <li><a href="about.html">Connect</a></li>
+        <li><a href="contact.html">Libraries</a></li>
+      </ul>
+    </nav>
+    <div class="profile-div">
+      <div class="auth-buttons" id="auth-buttons">
+        <button class="login-btn">Login</button>
+        <button class="register-btn">Register</button>
+      </div>
+      <a href="profile.html" class="profile-link" style="display: none;">    
+        <p></p>
+      </a>
+      <img src="../assets/image-circle-fill.png" alt="profile-pic" class="profile-pic-header" style="display: none;">
+      <button class="logout-btn" style="display: none;">Logout</button>
+    </div>
+  </div>
+
+  <!-- Add login modal -->
+  <div class="auth-modal" id="authModal" style="display: none;">
+    <div class="modal-content">
+      <span class="close">&times;</span>
+      
+      <!-- Login Form -->
+      <div id="loginForm">
+        <h2>Login to PaperMate</h2>
+        <form id="loginFormElement">
+          <input type="email" id="loginEmail" placeholder="Email" required>
+          <input type="password" id="loginPassword" placeholder="Password" required>
+          <button type="submit">Login</button>
+        </form>
+        <p>Don't have an account? <a href="#" id="switchToRegister">Register</a></p>
+      </div>
+  
+      <!-- Register Form -->
+      <div id="registerForm" style="display: none;">
+        <h2>Create Account</h2>
+        <form id="registerFormElement" autocomplete="on">
+          <input type="text" id="registerUsername" name="username" placeholder="Username" autocomplete="username" required>
+          <input type="email" id="registerEmail" name="email" placeholder="Email" autocomplete="email" required>
+          <input type="password" id="registerPassword" name="password" placeholder="Password" autocomplete="new-password" required>
+          <input type="text" id="registerInstitution" name="institution" placeholder="Institution (Optional)" autocomplete="organization">
+          <button type="submit">Register</button>
+        </form>
+        <p>Already have an account? <a href="#" id="switchToLogin">Login</a></p>
+      </div>
+    </div>
+  </div>
+
+  <!-- Main -->
+  <div class="container">
+    <div class="left"></div>
+    <div class="middle"> 
+      <main class="main">
+        <!-- Slider Trending  -->
+         <h1 class="trending-title">Trending Papers</h1>
+        <div class="slider1">
+          <div class="item1 ">
+              <img src="../assets/acad-dermatology.jpg" alt="" class="slider-img">
+              <h1 class="title">derma</h1>
+          </div>
+          <div class="item1 ">
+              <img src="../assets/journ-learning-research.jpg" alt="" class="slider-img">
+              <h1 class="title">derma</h1>
+          </div>
+          <div class="item1 ">
+              <img src="../assets/journ-oral-surgery.jpg" alt="" class="slider-img">
+              <h1 class="title">derma</h1>
+          </div>
+          <div class="item1 ">
+              <img src="../assets/journ-physics.jpeg" alt="" class="slider-img">
+              <h1 class="title">derma</h1>
+          </div>
+          <div class="item1 ">
+              <img src="../assets/acad-dermatology.jpg" alt="" class="slider-img">
+              <h1 class="title">derma</h1>
+          </div>
+          <div class="item1 ">
+              <img src="../assets/math-society.png" alt="" class="slider-img">
+              <h1 class="title">derma</h1>
+          </div>
+          <div class="item1 ">
+              <img src="../assets/acad-dermatology.jpg" alt="" class="slider-img">
+              <h1 class="title">derma</h1>
+          </div>
+          <div class="item1 ">
+              <img src="../assets/journ-learning-research.jpg" alt="" class="slider-img">
+              <h1 class="title">derma</h1>
+          </div>
+          
+          <button id="next1">></button>
+          <button id="prev1"><</button>
+      </div>
+        <!-- Slider Trending  -->
+
+        <!-- Slider FOR YOU  -->
+      <span class="foryou">  
+        <h1 class="for-you-title">Papers FOR YOU</h1>
+        <div class="slider2">
+          <div class="item2 ">
+              <img src="../assets/acad-dermatology.jpg" alt="" class="slider-img">
+              <h1 class="title">derma</h1>
+          </div>
+          <div class="item2 ">
+              <img src="../assets/journ-learning-research.jpg" alt="" class="slider-img">
+              <h1 class="title">derma</h1>
+          </div>
+          <div class="item2 ">
+              <img src="../assets/journ-oral-surgery.jpg" alt="" class="slider-img">
+              <h1 class="title">derma</h1>
+          </div>
+          <div class="item2 ">
+              <img src="../assets/journ-physics.jpeg" alt="" class="slider-img">
+              <h1 class="title">derma</h1>
+          </div>
+          <div class="item2 ">
+              <img src="../assets/acad-dermatology.jpg" alt="" class="slider-img">
+              <h1 class="title">derma</h1>
+          </div>
+          <div class="item2 ">
+              <img src="../assets/math-society.png" alt="" class="slider-img">
+              <h1 class="title">derma</h1>
+          </div>
+          <div class="item2 ">
+              <img src="../assets/acad-dermatology.jpg" alt="" class="slider-img">
+              <h1 class="title">derma</h1>
+          </div>
+          <div class="item2 ">
+              <img src="../assets/journ-learning-research.jpg" alt="" class="slider-img">
+              <h1 class="title">derma</h1>
+          </div>
+        </span> 
+        <!-- Slider FOR YOU  -->
+          
+          <button id="next2">></button>
+          <button id="prev2"><</button>
+      </div>
+
+      <!-- REVIEWS  -->
+      <h1 class="review-title">Recent reviews</h1>
+      <div class="review-carousel-container">
+        <div class="review-direction">
+            <button id="review-prev"> < </button>
+        </div>
+        <div id="review-formList">
+            <div id="review-list">
+                <div class="review-item">
+                    <img src="../assets/review 1.PNG" class="avatar">
+                </div>
+                <div class="review-item">
+                    <img src="../assets/review 1.PNG" class="avatar">
+                </div>
+                <div class="review-item">
+                    <img src="../assets/review 1.PNG" class="avatar">
+                </div>
+                <div class="review-item">
+                    <img src="../assets/review 1.PNG" class="avatar">
+                </div>
+                <div class="review-item">
+                    <img src="../assets/review 1.PNG" class="avatar">
+                </div>
+                <div class="review-item">
+                    <img src="../assets/review 1.PNG" class="avatar">
+                </div>
+                <div class="review-item">
+                    <img src="../assets/review 1.PNG" class="avatar">
+                </div>
+            </div>
+        </div>
+        <div class="review-direction">
+            <button id="review-next"> > </button>
+        </div>
+    </div>
+      <!-- REVIEWS  -->
+
+
+  </main>
+  
+</div>
+   <div class="right">
+    <div class="profile-info">
+        <ul class="profile-list">
+            <li class="profile-link">
+                <p class="profile-link-text">My Libraries</p>
+                <p class="profile-link-text">32 Read</p>
+                <p class="profile-link-text">150 in Library</p>
+                <p class="profile-link-text">43 Citations</p>
+            </li>
+        </ul>
+    </div>
+   </div>
+</div> 
+
+  <div class="footer">
+    
+      <h2>PaperMate</h2> 
+      <h3>Products</h3>  
+      <h3>Support</h3>
+      <h3>Follow Us</h3>
+    
+  </div>
+
+
+  <script src="../js/auth-manager.js"></script>
+  <script src="../js/auth.js"></script>
+  <script src="../js/main.js"></script>
+</body>
+</html>

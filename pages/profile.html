@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>PaperMate Homepage</title>
+  <link rel="stylesheet" href="../css/main.css">
+  <link rel="stylesheet" href="../css/profile.css">
+</head>
+<body>
+
+  <!-- Header -->
+  <div class="header">
+    <span class="logo-title">
+      <img src="../assets/paper mate logo.png" alt="PaperMate Logo" class="logo"/>
+      <h1>PaperMate</h1>
+    </span>
+    <input type="text" placeholder="Search. . ." class="search-bar">
+    <nav class="navbar">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="paper-page.html">Browse</a></li>
+        <li><a href="about.html">Connect</a></li>
+        <li><a href="contact.html">Libraries</a></li>
+      </ul>
+    </nav>
+    <div class="profile-div">
+      <div class="auth-buttons" id="auth-buttons">
+        <button class="login-btn">Login</button>
+        <button class="register-btn">Register</button>
+      </div>
+      <a href="profile.html" class="profile-link" style="display: none;">    
+        <p></p>
+      </a>
+      <img src="../assets/image-circle-fill.png" alt="profile-pic" class="profile-pic-header" style="display: none;">
+      <button class="logout-btn" style="display: none;">Logout</button>
+    </div>
+  </div>
+  <!-- Header -->
+
+  <!-- Main -->
+  <div class="container">
+    <div class="left"></div>
+    <div class="middle"> 
+      <main class="main">
+        <!-- Profile Header Section -->
+        <div class="profile-header">
+          <div class="profile-header-left">
+            <img src="../assets/image-circle-fill.png" alt="profile-pic" class="profile-pic">
+          </div>
+          <div class="profile-header-info">
+            <h2 class="profile-name"></h2>
+            <p class="institution"></p>
+            <p class="bio"></p>
+            <div class="profile-stats">
+              <span>32 Papers Read</span>
+              <span>•</span>
+              <span>150 in Library</span>
+              <span>•</span>
+              <span>43 Citations</span>
+            </div>
+          </div>
+          <div class="profile-header-actions">
+            <button class="create-library-btn">Create Library +</button>
+            <button class="edit-profile-btn">Edit Profile</button>
+          </div>
+        </div>
+
+        <!-- Content Sections -->
+        <div class="profile-content">
+          <!-- Libraries Section -->
+          <section class="content-section libraries-section">
+            <h3>My Libraries</h3>
+            <div class="libraries-grid">
+              <div class="library-card">
+                <h4>Machine Learning</h4>
+                <p>32 papers</p>
+              </div>
+              <div class="library-card">
+                <h4>Neural Networks</h4>
+                <p>24 papers</p>
+              </div>
+              <div class="library-card">
+                <h4>Data Science</h4>
+                <p>18 papers</p>
+              </div>
+            </div>
+          </section>
+
+          <!-- Citations Section -->
+          <section class="content-section libraries-section">
+            <h3>Citations</h3>
+            <div class="libraries-grid">
+              <div class="library-card">
+                <h4>Machine Learning</h4>
+               <!-- <p>32 papers</p>  --> 
+              </div>
+              <div class="library-card">
+                <h4>Neural Networks</h4>
+                
+              </div>
+              <div class="library-card">
+                <h4>Data Science</h4>
+              
+              </div>
+            </div>
+          </section>
+
+          <!-- Friends Section -->
+          <section class="content-section friends-section">
+            <h3>Connections</h3>
+            <div class="friends-grid">
+              <div class="friend-card">
+                <img src="../assets/image-circle-fill.png" alt="friend">
+                <p>John Doe</p>
+                <span>MIT</span>
+              </div>
+              <div class="friend-card">
+                <img src="../assets/image-circle-fill.png" alt="friend">
+                <p>Jane Smith</p>
+                <span>Harvard</span>
+              </div>
+              <!-- Add more friend cards as needed -->
+            </div>
+          </section>
+
+          <!-- Reviews Section -->
+          <section class="content-section reviews-section">
+            <h3>Recent Reviews</h3>
+            <div class="reviews-list">
+              <div class="review-card">
+                <div class="review-header">
+                  <h4>Deep Learning Advances in 2024</h4>
+                  <div class="rating">★★★★☆</div>
+                </div>
+                <p class="review-text">Excellent paper covering the latest developments in deep learning...</p>
+                <span class="review-date">2 days ago</span>
+              </div>
+              <!-- Add more review cards as needed -->
+            </div>
+          </section>
+        </div>
+      </main>
+    </div>
+    <div class="right">
+      <!-- Right sidebar content can be modified as needed -->
+    </div>
+  </div> 
+
+  <div class="footer">
+    
+      <h2>PaperMate</h2> 
+      <h3>Products</h3>  
+      <h3>Support</h3>
+      <h3>Follow Us</h3>
+    
+  </div>
+
+  <div class="edit-profile-modal" id="editProfileModal" style="display: none;">
+    <div class="modal-content">
+        <span class="close">&times;</span>
+        <h2>Edit Profile</h2>
+        <form id="editProfileForm">
+            <input type="text" id="editUsername" placeholder="Username">
+            <input type="text" id="editInstitution" placeholder="Institution">
+            <textarea id="editBio" placeholder="Tell us about yourself..."></textarea>
+            <div class="profile-pic-upload">
+                <label for="profilePicInput">Profile Picture</label>
+                <input type="file" id="profilePicInput" accept="image/*">
+            </div>
+            <button type="submit">Save Changes</button>
+        </form>
+    </div>
+</div>
+
+<script src="../js/auth.js"></script>
+<script src="../js/auth-manager.js"></script>
+<script src="../js/main.js"></script>
+<script src="../js/profile.js"></script>
+</body>
+</html>
